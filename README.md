@@ -1,4 +1,6 @@
 <<<<<<< HEAD
+# 特别声明：项目来自于：https://gitee.com/yidao620/springboot-bucket
+所有代码都基于作者的代码改进；
 ## SpringBoot 全家桶
 
 [![GitHub issues](https://img.shields.io/github/issues/yidao620c/SpringBootBucket.svg)](https://github.com/yidao620c/SpringBootBucket/issues)
