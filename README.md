@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## SpringBoot 全家桶
 
 [![GitHub issues](https://img.shields.io/github/issues/yidao620c/SpringBootBucket.svg)](https://github.com/yidao620c/SpringBootBucket/issues)
@@ -105,3 +106,7 @@ Copyright (c) 2018 [Xiong Neng](https://www.xncoding.com/)
 [licensesvg]: https://img.shields.io/badge/license-MIT-brightgreen.svg
 [license]: http://www.opensource.org/licenses/MIT
 
+=======
+# springboot-bucket
+springboot-bucket
+>>>>>>> c6019a80315f88fa188e3be5a715e4b5d7cec180
