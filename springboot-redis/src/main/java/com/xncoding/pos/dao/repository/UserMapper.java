@@ -4,4 +4,6 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
 import com.xncoding.pos.dao.entity.User;
 
 public interface UserMapper extends BaseMapper<User> {
+
+    public User selectById(Integer id);
 }

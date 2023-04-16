@@ -99,4 +99,25 @@ public class UserService {
         }
     }
 
+    /**
+     * 根据名字搜索用户
+     * 如果缓存存在，缓存读取
+     * 否则数据库中读取
+     * @param id
+     */
+    public User selectById(Integer id){
+        logger.info("通过名字搜索用户start....");
+        String key="user_"+id;
+        ValueOperations<String, User> operations= redisTemplate.opsForValue();
+        Boolean hasKey = redisTemplate.hasKey(key);
+        if (hasKey){
+            User user = operations.get(key);
+            logger.info("从缓存中获取了用户 id = " + id);
+            return user;
+        }
+        User user = userMapper.selectById(id);
+        operations.set(key,user);
+        return user;
+    }
+
 }

@@ -7,6 +7,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.annotation.Rollback;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -44,5 +45,17 @@ public class UserServiceTest {
         assertEquals(user3.getPassword(), "123456");
         userService.deleteById(id);
         assertNull(userService.getById(id));
+    }
+
+    @Test
+    public  void  testSelectById(){
+
+        User user1 = new User(10000, "test", "test");
+        userService.createUser(user1);
+        userService.selectById(10000);
+        userService.selectById(10000);
+
+
+
     }
 }

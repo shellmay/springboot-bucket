@@ -31,5 +31,5 @@ logging:
     ROOT: INFO
     com:
       xncoding: DEBUG
-  file: D:/logs/app.log
+  file: /Users/xiaomeichen/study/2023-study/springboot-study/springboot-bucket/logs/app.log
 
